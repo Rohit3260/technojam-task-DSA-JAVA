@@ -1,0 +1,7 @@
+String Compression
+
+APPROACH:-
+ Iterate through the character array, count consecutive characters, and build a compressed string using a StringBuffer.
+
+Time Complexity: O(n) due to a single pass through the array.
+Space Complexity:  O(n) in the worst case for the output string.
