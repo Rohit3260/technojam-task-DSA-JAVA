@@ -1,0 +1,18 @@
+Pascal's Triangle
+
+APPROACH:-
+
+Input : Taking input from the user for no of rows(n) of the pascal triangle's.
+
+outer loop: a loop run for creating 's' no of rows.
+
+adding space: a for loop for printing the space in each row by the formula (n - i (from outer loop which increases) -1) since in the first row we need n-1 space in second row n-2 space and so on
+
+inner loop : 
+	(i)for each row we run a loop from 0 to i(row's number since each row of pascal 	triangle contain the no of element equal to the row's number)
+	(ii) first element for each row is 1.
+	     and the following element are compute by ((ans*(i-j))/(j+1)) where ans is the 	     previous value(ans)
+
+
+Time Complexity:O(n^2)due to the nested loops iterating over rows and values in the rows.
+Space Complexity: O(1) since only a few variables are used and no extra space is required for storing the triangle.
