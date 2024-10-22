@@ -1,0 +1,20 @@
+Climbing Stairs
+
+APPROACH:-
+Base Cases:
+
+If there are fewer than 3 steps (n < 3), the function returns n directly. 
+If n = 0, there are 0 ways to climb.
+If n = 1, there is 1 way (one single step).
+If n = 2, there are 2 ways (two single steps or one double step).
+
+Use a loop starting from the 3rd stair up to the n-th stair:
+For each stair i, the number of ways to reach it is the sum of the ways to reach the two previous stairs:
+stairsClimbed = forLastStair + forSecondLast
+
+Update the variables for the next iteration:
+Set forSecondLast to the value of forLastStair.
+Set forLastStair to stairsClimbed.
+
+Time Complexity: O(n) due to a single loop iterating through the number of stairs.
+Space Complexity: O(1) because it doesn't store intermediate data
