@@ -1,0 +1,10 @@
+BitWar
+
+APPROACH:-
+The program reads two long integers, left and right, which define the range for which the bitwise AND needs to be calculated.
+The function rangeBitwiseMax initializes a variable result to left.
+It then iterates from left + 1 to right, applying the bitwise AND operation (&&) between result and each number in that range.
+The loop continues until it reaches right, updating result with the AND of itself and the current number in each iteration.
+
+Time Complexity:O(right−left) due to the loop iterating through the range.
+Space Complexity: O(1) since it doesn't store data in intermediate state.
